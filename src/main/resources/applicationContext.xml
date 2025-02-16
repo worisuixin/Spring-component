@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    注解组件扫描，扫描指定的基本包及其子包下的类，识别是否使用@Component注解.使用了就将其创建对象放到容器中
+原本应该在这里面写很多的bean，但现在写成注解了，不需要再写了，那仍然需要高速spring去扫描注解，否则用不了-->
+        <context:component-scan base-package="com.itbaima"/>
+
+</beans>
