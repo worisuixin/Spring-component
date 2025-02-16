@@ -20,7 +20,7 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public void show() {
-        System.out.println(username);
+        System.out.println("userDao"+username);
     }
 
     public UserDaoImpl() {
